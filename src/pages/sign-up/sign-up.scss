@@ -1,0 +1,29 @@
+page-sign-up {
+    #rounded {
+        width: 100%;
+        height: 50px;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 100px;
+        border-radius: 100px;
+        margin-bottom: 10px;  
+    }
+
+    #container {
+        width: 100%; 
+        margin-left:auto; 
+        margin-right: auto; 
+    }
+    
+    p {
+        width: 100%; 
+        text-align: center; 
+        border-bottom: 1px solid #000; 
+        line-height: 0.1em;
+        margin: 10px 0 20px; 
+     } 
+     
+     p span { 
+         background:#fff; 
+         padding:0 10px; 
+     }
+}

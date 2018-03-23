@@ -1,0 +1,90 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sign Up</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+              <form [formGroup]="signUpForm">
+                  <div id="container">
+                    <ion-list>
+                      <ion-item id="rounded">
+                          <ion-input type="text" placeholder="firstName" formControlName="firstName" name="firstName"></ion-input>
+                        </ion-item>
+                    </ion-list>
+                    <app-control-messages [control]="signUpForm.controls.firstName"></app-control-messages>
+                  </div>
+
+                  <div id="container" style="margin-top:5%;">
+                      <ion-list>
+                        <ion-item id="rounded">
+                            <ion-input type="text" placeholder="lastName" formControlName="lastName" name="lastName"></ion-input>
+                          
+                        </ion-item>
+                      </ion-list>
+                      <app-control-messages [control]="signUpForm.controls.lastName"></app-control-messages>
+                    </div>
+
+                    <div id="container">
+                        <ion-list>
+                          <ion-item id="rounded">
+                              <ion-input type="email" placeholder="Email" formControlName="email" name="email"></ion-input>
+                           
+                          </ion-item>
+                        </ion-list>
+                        <app-control-messages [control]="signUpForm.controls.email"></app-control-messages>
+                      </div>
+
+                      <div id="container" style="margin-top:5%;">
+                          <ion-list>
+                            <ion-item id="rounded">
+                                <ion-input type="password" placeholder="password" formControlName="password" name="password"></ion-input>
+                               
+                              </ion-item>
+                          </ion-list>
+                          <app-control-messages [control]="signUpForm.controls.password"></app-control-messages>
+                        </div>
+                  
+                        <div id="container">
+                            <ion-list>
+                              <ion-item id="rounded">
+                                  <ion-input type="number" placeholder="phone number" formControlName="phone_number" name="phone_number"></ion-input>
+                                  
+                                </ion-item>
+                            </ion-list>
+                            <app-control-messages [control]="signUpForm.controls.phone_number"></app-control-messages>
+                          </div>
+
+                    <div>
+                        <button id="rounded" rounded outline ion-button [disabled]="!signUpForm.valid" block type="submit" (click)="registerUser()">Register</button>
+                    </div>
+              </form>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+            <p><span>or</span></p>
+        </ion-col>
+      </ion-row>
+
+    <ion-row>
+      <ion-col style="font-weight: bold; font-size: 15px; color: grey;" text-center>
+        Already a Member?Please SignIn
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col>
+            <button ion-button clear block (click)="onSignIn()">Sign In</button>
+        </ion-col>
+      </ion-row>
+
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,69 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title text-center>Welcome</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h1 text-center>Mobile Otp Demo App</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-slides autoplay="1000" loop="true" speed="1500">
+          <ion-slide>
+            <img src="./assets/slides/1.jpg" />
+          </ion-slide>
+          <ion-slide>
+            <img src="./assets/slides/2.jpg" />
+          </ion-slide>
+          <ion-slide>
+            <img src="./assets/slides/3.png" />
+          </ion-slide>
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="signUpButton">
+      <ion-col>
+        <button 
+          ion-button 
+          block 
+          icon-left 
+          icon-only 
+          round
+          (click)="onSignUp()">
+          <ion-icon name="log-in"></ion-icon>
+          Sign up now
+        </button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <p style="font-weight: bold; font-size: 15px; color: grey;" text-center>Have an account?</p>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+        <ion-col text-center>
+          <button 
+            style="font-weight: bold; font-size: 25px; color:#F6A08E;" 
+            ion-button 
+            clear
+            (click)="onSignIn()">
+              SignIn
+          </button>
+        </ion-col>
+      </ion-row>
+
+  </ion-grid>
+</ion-content>
