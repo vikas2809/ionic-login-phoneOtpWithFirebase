@@ -14,8 +14,8 @@ export class MyApp {
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
 
     firebase.initializeApp({
-      apiKey: "AIzaSyCmmqw8t9TNrHmnAWa9_M2QlXBSeY6J65w",
-      authDomain: "mobileotpdemoapp.firebaseapp.com",
+      apiKey: "fire-base api key",
+      authDomain: "fire-base auth domain name",
     })
 
     platform.ready().then(() => {
